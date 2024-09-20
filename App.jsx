@@ -6,27 +6,24 @@ const App = () => {
     backgroundColor: '#FFFFFF',
     textColor: '#000000',
   };
-
-  // Define the greenish-blue (teal) color
-  const appBarColor = ''; // Greenish-blue (teal) color
+  const appBarColor = '#004D40';
 
   return (
     <>
-      {/* Set the status bar background color */}
       <StatusBar backgroundColor={appBarColor} barStyle="light-content" />
 
       <SafeAreaView style={[styles.safeArea, { backgroundColor: appBarColor }]}>
-        {/* Custom AppBar */}
+
         <View style={[styles.appBar, { backgroundColor: appBarColor }]}>
           <Text style={styles.appBarText}>My App</Text>
         </View>
-
-        {/* Main content */}
+        
         <View style={[styles.container, { backgroundColor: lightTheme.backgroundColor }]}>
           <Text style={[styles.text, { color: lightTheme.textColor }]}>
             Hello from the main content!
           </Text>
         </View>
+
       </SafeAreaView>
     </>
   );
@@ -37,7 +34,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   appBar: {
-    height: 60, // Standard app bar height
+    height: 60,
     justifyContent: 'center',
     paddingHorizontal: 16,
   },
